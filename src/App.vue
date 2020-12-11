@@ -239,18 +239,18 @@
             </template>
           </card>
           <card
-            color="green"
+            name="Forced March"
             height="600"
-            name="Shelter from the Wrath"
-            manacost="6"
-            :crosslane="false"
-            type="improvement"
-            bg-image="https://i.pinimg.com/564x/43/7a/9c/437a9c3cd234d8ebdadca42eec377539.jpg"
+            color="red"
+            manacost="5"
+            type="spell"
+            bg-image="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/09be60de-acc5-437b-9ec6-a6589fab6547/d2gehmu-47baf0d9-bae1-4727-9f98-10ec41680704.jpg/v1/fill/w_1024,h_597,q_75,strp/imperials_marching_by_epson361_d2gehmu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTk3IiwicGF0aCI6IlwvZlwvMDliZTYwZGUtYWNjNS00MzdiLTllYzYtYTY1ODlmYWI2NTQ3XC9kMmdlaG11LTQ3YmFmMGQ5LWJhZTEtNDcyNy05Zjk4LTEwZWM0MTY4MDcwNC5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.w8uIqEefqhG7Am6pcU4Z4RDKjDs47mzAGfETyAb0AyQ"
             :keywords="[]"
           >
             <template v-slot:description>
               <div>
-                <p>At the start of the action phase, add a charge to this card. Then, if this has 2 charges on it, condemn this improvement and all units in all other lanes.</p>
+                <p>Condemn half of allied creeps <i>(rounded down, chosen at random)</i></p>
+                <p><span class="pulse"></span> Return all allied units to the fountain.</p>
               </div>
             </template>
           </card>
@@ -265,6 +265,22 @@
           >
             <template v-slot:description>
               <p>Your heroes in the fountain redeploy next round.</p>
+            </template>
+          </card>
+          <card
+            color="green"
+            height="600"
+            name="Shelter from the Wrath"
+            manacost="6"
+            :crosslane="false"
+            type="improvement"
+            bg-image="https://i.pinimg.com/564x/43/7a/9c/437a9c3cd234d8ebdadca42eec377539.jpg"
+            :keywords="[]"
+          >
+            <template v-slot:description>
+              <div>
+                <p>At the start of the action phase, add a charge to this card. Then, if this has 2 charges on it, condemn this improvement and all units in all other lanes.</p>
+              </div>
             </template>
           </card>
           <card
@@ -333,22 +349,6 @@
           >
             <template v-slot:description>
               <p>Draw 4 cards, and modify each with +2 mana cost</p>
-            </template>
-          </card>
-          <card
-            name="Forced March"
-            height="600"
-            color="red"
-            manacost="5"
-            type="spell"
-            bg-image="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/09be60de-acc5-437b-9ec6-a6589fab6547/d2gehmu-47baf0d9-bae1-4727-9f98-10ec41680704.jpg/v1/fill/w_1024,h_597,q_75,strp/imperials_marching_by_epson361_d2gehmu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTk3IiwicGF0aCI6IlwvZlwvMDliZTYwZGUtYWNjNS00MzdiLTllYzYtYTY1ODlmYWI2NTQ3XC9kMmdlaG11LTQ3YmFmMGQ5LWJhZTEtNDcyNy05Zjk4LTEwZWM0MTY4MDcwNC5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.w8uIqEefqhG7Am6pcU4Z4RDKjDs47mzAGfETyAb0AyQ"
-            :keywords="[]"
-          >
-            <template v-slot:description>
-              <div>
-                <p>Condemn half of allied creeps <i>(rounded down, chosen at random)</i></p>
-                <p><span class="pulse"></span> Return all allied units to the fountain.</p>
-              </div>
             </template>
           </card>
           <card
@@ -909,6 +909,37 @@
             </template>
           </card>
           <card
+            height="600"
+            name="Keeper of the Light"
+            bg-image="https://3.bp.blogspot.com/-JqrEC1Tncso/WKpcprF5MdI/AAAAAAAAhBk/gfaupZClcjMYz5AroiR9uUtP9JGkl0PSgCLcB/s1600-d/Keeper_of_the_Light_Ezalor_DOTA_2_Wallpaper_Fondo_Loading_screen.jpg"
+            type="hero"
+            color="blue"
+            attack="2"
+            armor="0"
+            health="7"
+            :keywords="[]"
+            tags="Human Wizard"
+          >
+            <template v-slot:description>
+              <p>At the end of the round, both towers in this lane get +1 max mana.</p>
+            </template>
+          </card>
+          <card
+            height="600"
+            name="Illuminating Blast"
+            bg-image="https://media.esportsedition.com/wp-content/uploads/2017/05/Keeper-1068x530.jpg"
+            type="spell"
+            color="blue"
+            :keywords="[]"
+            manacost="X"
+          >
+            <template v-slot:description>
+              <p>Choose a blue hero and choose one:<br/>
+              <small>Deal X damage to enemy units <em>left </em> of that hero.</small><br/>
+              <small>Deal X damage to enemy units <em>right</em> of that hero.</small></p>
+            </template>
+          </card>
+          <card
             bg-image="https://i.pinimg.com/564x/a1/89/f6/a189f656269b5de642240eda6d291f5d.jpg"
             color="black"
             type="spell"
@@ -1069,6 +1100,95 @@
           >
             <template v-slot:description>
               <p>Whenever you pass while this is in your hand, give this card -1 manacost until end of action phase.</p>
+            </template>
+          </card>
+          <card
+            bg-image="https://i.pinimg.com/564x/f3/3e/bc/f33ebc1d2cf5d08344f8b84934af938a.jpg"
+            name="Tower Colossus"
+            height="600"
+            color="black"
+            type="creep"
+            manacost="5"
+            attack="4"
+            health="4"
+            armor="0"
+            :keywords="[]"
+            tags="Construct"
+          >
+            <template v-slot:description>
+              <p>At the end of the combat phase, deal 4 damage to your tower and give <em>Tower Colossus</em> +4 attack and +4 health.</p>
+            </template>
+          </card>
+          <card
+            bg-image="https://i.pinimg.com/564x/b8/e7/7e/b8e77ef84bc5cb647eb13255aff39950.jpg"
+            name="Animate the Rubble"
+            height="600"
+            color="green"
+            manacost="6"
+            type="improvement"
+            :keywords="[]"
+          >
+            <template v-slot:description>
+              <p>During the deployment phase, if your tower took damage last turn, deploy a <em>Debris Golem</em> with X attack and X health into this lane.
+              X is the damage that was dealt to your tower last turn.</p>
+            </template>
+          </card>
+          <card
+            bg-image="https://i.pinimg.com/564x/ac/69/08/ac69081ea4744beb80cad2f49a711fcb.jpg"
+            name="Kidnap"
+            height="600"
+            color="black"
+            manacost="4"
+            type="spell"
+            :keywords="[]"
+          >
+            <template v-slot:description>
+              <p>Choose an enemy creep with 4 or less attack in any lane. Take control of it and return it to the fountain.</p>
+            </template>
+          </card>
+          <card
+            bg-image="https://i.pinimg.com/564x/7b/96/3e/7b963e66139affd6cd1c95840841193c.jpg"
+            name="Flash Farm"
+            height="600"
+            color="black"
+            manacost="5"
+            type="spell"
+            :keywords="[]"
+          >
+            <template v-slot:description>
+              <p>Condemn all <em>Melee Creeps</em>.</p>
+            </template>
+          </card>
+          <card
+            bg-image="https://i.pinimg.com/564x/ff/ea/82/ffea8294bf5c226016bb38f188d5b759.jpg"
+            name="Roseleaf Protector"
+            height="600"
+            color="green"
+            manacost="4"
+            type="creep"
+            attack="4"
+            armor="0"
+            health="4"
+            :keywords="[]"
+          >
+            <template v-slot:description>
+              <p>When you could play this card, you may reveal it instead and draw a card. If this effect is activated, give <em>Roseleaf Protector</em> +2 lock.</p>
+            </template>
+          </card>
+          <card
+            color="item"
+            height="600"
+            type="armor"
+            :keywords="[]"
+            name="Nether Shrawl"
+            cost="5"
+            bg-image="https://i.pinimg.com/564x/b2/9b/48/b29b4854a27586fb94280bd875d6c022.jpg"
+          >
+            <template v-slot:description>
+              <div>
+                <p>Equipped hero has -3 armor.</p>
+                <p>Equipped hero has <b>damage immunity</b> outside of the combat phase.</p>
+              </div>
             </template>
           </card>
         </div>

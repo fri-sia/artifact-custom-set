@@ -318,6 +318,10 @@ export default {
             font-style: normal;
             color: #fff;
         }
+        small {
+            font-size: 0.85rem;
+        }
+
         .tags {
             grid-row-start: 3;
             font-style: italic;
